@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation suggester</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <h1>Time to leave for vacation!</h1>
+      <p>Would you like vacation, but don't know where to go ?</p>
+      <p>Let me help you with finding right place for your vacation based on your preferences.</p>
+      <form id="vacation">
+          <label for="age">Age</label>
+          <input id="age" type="text">
+        
+
+          <label for="company">Do you have a company / companies?</label>
+          <select id="company">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+
+
+           <div class="solo">
+           <label for="solo" id="solo">What do you focus on when you go for vacation?</label>
+           <select id="solo">
+             <option value="relax">relax and taking a rest</option>
+             <option value="amusement">amusement and excitement by sightseeing</option>
+             <option value="shopping">shopping and food</option>
+           </select>
+
+
+
+           </div>
+           <div class="group">
+           <label for="group" id="group">How many people are you going with?</label>
+           <select id="group">
+             <option value="1-2">1-2 people</option>
+             <option value="3-4">3-4 people</option>
+             <option value="5-6">5-6 people</option>
+           </select>
+           </div>
+
+           <div class="radio">
+           <label for="season" id="radio">When are you planning to go?
+           <input type="radio" name="operator" value="spring" checked>
+           spring
+           </label>
+           </div>
+           <div class="radio">
+           <label>
+             <input type="radio" name="operator" value="summer">
+           </label>
+           </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="fall" checked>
+            fall
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="winter">
+            winter
+          </label>
+        </div>
+
+
+        <button type="submit" class="btn">Go!</button>
+      </form>
+      <div id="output">
+
+      </div>
+    </div>
+  </body>
+</html>
